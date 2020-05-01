@@ -18,7 +18,7 @@ func Add (self *dl.Dl) (res interface{}) {
 		return
 	}
 
-	if name, err = self.SubNodeListGetString (0); err != nil {
+	if name, err = self.SubNodeListGetSingleString (0); err != nil {
 		panic (err)
 	}
 	if name != "+" {
