@@ -6,7 +6,7 @@ import (
 )
 
 func Load (self *dl.Dl) {
-	self.Lambdas["+"] = math.Add
+	dl.Lambdas["+"] = math.Add
 
 	return
 }

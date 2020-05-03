@@ -26,8 +26,8 @@ generate:
 build:
 	for CmdName in $(lib); \
 	do \
-		echo "go build -buildmode=plugin -o ./bin/$$CmdName.so ./lib/$$CmdName.go"; \
-		go build -buildmode=plugin -o ./bin/$$CmdName.so ./lib/$$CmdName.go; \
+		echo "go build -buildmode=plugin -o ./bin/lib/$$CmdName.so ./lib/$$CmdName.go"; \
+		go build -buildmode=plugin -o ./bin/lib/$$CmdName.so ./lib/$$CmdName.go; \
 	done
 
 test:

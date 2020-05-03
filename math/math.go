@@ -27,7 +27,7 @@ func Add (self *dl.Dl) (res interface{}) {
 
 	tmpRes := float64 (0)
 	for _, One := range self.SubNodeList {
-		resI := One.Run ()
+		resI := One.Call ()
 
 		switch resTmp := resI.(type) {
 		case float64:
